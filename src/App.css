@@ -72,9 +72,26 @@ button span {
   border: 2px solid hsl(198, 1%, 29%);
 }
 
+.ListDiv{
+  display: flex;
+  justify-content: space-between; /* This makes the list item and icon stay on opposite sides */
+  align-items: center; /* Aligns the icon and list item vertically */
+  margin-bottom: 1.5rem;
+  padding-right: 1rem; 
+}
+.icon{
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: hsl(198, 1%, 29%);
+}
+
 li {
   text-align: left;
   position: relative;
   padding: 0.5rem;
+  flex-grow: 1;
+  word-break: break-word; /* This will force long text to wrap */
+  overflow-wrap: break-word; /* Ensures words break when too long */
 }
 

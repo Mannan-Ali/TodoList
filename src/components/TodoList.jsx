@@ -1,21 +1,23 @@
 /* eslint-disable react/prop-types */
-// import React, { useState } from "react";
+import { useState } from "react";
 
 function List(props) {
-  // const [val, func] = useState(false);
-  // function handleClick() {
-  //   func(!val);
-  // }
-  // style={{ textDecoration: val && "line-through" }}
+  const [val, func] = useState(false);
+  function handleClick() {
+    func(!val);
+  }
+  
 
   return (
-    <li
-      onClick={() => {
-        props.handleClick(props.id);
-      }}
-    >
+    <div className="ListDiv">
+    <li style={{ textDecoration: val && "line-through" }}
+    onClick={handleClick}>
       {props.todoVal}
     </li>
+    <i className="ri-close-fill icon"  onClick={() => {
+        props.handleClick(props.id);
+      }}></i>
+    </div>
   );
 }
 export default List;
