@@ -1,5 +1,6 @@
 {
   "name": "todolist",
+  "homepage": "https://github.com/Mannan-Ali/TodoList",
   "private": true,
   "version": "0.0.0",
   "type": "module",
