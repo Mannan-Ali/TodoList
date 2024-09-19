@@ -1,7 +1,7 @@
 import  { useState } from "react";
 import List from "./components/TodoList";
 import InputArea from "./components/InputArea";
-import './App.css'
+import './App.css';
 
 function App() {
   const [items, setItems] = useState([]);
